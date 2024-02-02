@@ -1,5 +1,7 @@
 # AI-Afham Chatbot
 
+![Alt Text](https://scx2.b-cdn.net/gfx/news/hires/2023/chatbot-2.jpg)
+
 AI-Afham Chatbot is a web application that showcases a simple yet customizable chatbot powered by Google's Generative AI. The chatbot provides a user-friendly interface for interactive conversations, and it includes an optional feature to display a user's face alongside the chat.
 
 ## Table of Contents
