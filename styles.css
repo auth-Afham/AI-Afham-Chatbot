@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .chat-container {
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #chat {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+  
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+  }  
+
+/* Add this style to your existing CSS */
+#user-face {
+  width: 100%; /* Set the width as per your requirement */
+  height: 600px; /* Maintain the aspect ratio */
+  border-radius: 0%; /* Optionally, add border-radius for a circular shape */
+}

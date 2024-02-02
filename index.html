@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Afham Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="chatbot.js"></script>
+  <div class="chat-container">
+    <div id="face-container">
+      <!-- Add your image here -->
+      <img id="user-face" src="_DSC1602.jpg" alt="Your Face">
+    </div>
+    <div id="chat"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+  </div>
+</body>
+</html>
