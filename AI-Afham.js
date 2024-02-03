@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             // Append the new message to the parts array
             parts.push({ text: `input: ${userMessage}` }, { text: `output: ` });
 
-            appendMessage('The model received your prompt, so please wait for a few seconds...');
+            appendMessage("The AI-Afham chatbot has received your prompt, \"" + userMessage + "\", so please wait a few seconds...");
 
             const waitMessage = document.createElement('div');
             chatContainer.scrollTop = chatContainer.scrollHeight;
