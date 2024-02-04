@@ -91,9 +91,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         chatContainer.innerHTML = ''; // Clear previous content
         chatContainer.appendChild(message);
         chatContainer.scrollTop = chatContainer.scrollHeight;
-
-        // Update the conversation for printing in the terminal
-        console.log(`${role}: ${text}\n`);
     }
 
     async function sendMessageButton(parts) {
@@ -101,10 +98,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (userMessage !== '') {
             // Append the new message to the parts array
             parts.push({ text: `input: ${userMessage}` }, { text: `output: ` });
-
-            appendMessage("The AI-Afham chatbot has received your prompt, \"" + userMessage + "\", so please wait a few seconds...");
-
-            const waitMessage = document.createElement('div');
+            console.log('You: ' + userMessage);
+            appendMessage("Received: \"" + userMessage + "\"\n\nPlease wait a few seconds...");
             chatContainer.scrollTop = chatContainer.scrollHeight;
 
             try {
@@ -116,10 +111,11 @@ document.addEventListener('DOMContentLoaded', async function () {
 
                 const response = await result.response;
                 const text = response.text();
+                console.log('AI-Afham: ' + text);
                 appendMessage(text);
             } catch (error) {
                 console.error('Error:', error);
-                waitMessage.innerText = '\nOops! Something went wrong. Please try again.';
+                appendMessage('\nOops! Something went wrong. Please try again.');
             }
             
             // Remove the last two elements
@@ -133,11 +129,5 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (event.key === 'Enter') {
             sendMessageButton(parts);
         }
-    });
-
-    // Display the alert when the page loads
-    document.addEventListener('DOMContentLoaded', function () {
-        const alert = document.getElementById('alert');
-        alert.style.display = 'block';
     });
 });
