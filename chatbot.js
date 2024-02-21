@@ -2,6 +2,8 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
 
 const MODEL_NAME = "gemini-pro";
+// Retrieve the API key from the environment variable
+const API_KEY = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
 
 if (!API_KEY) throw new Error("Missing GOOGLE_GENERATIVE_AI_API_KEY");
 
