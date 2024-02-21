@@ -23,7 +23,7 @@ AI-Afham chatbot is a web application that showcases a simple yet customizable c
 
 1. Open `index.html` in your preferred web browser.
 2. Interact with the chatbot by typing messages in the input field.
-3. Optionally, customize the chatbot's behavior by modifying the configuration in `AI-Afham.js`.
+3. Optionally, customize the chatbot's behavior by modifying the configuration in `chatbot.js`.
 4. Ensure your Generative AI API key is securely set in the `API_KEY` variable.
 
 ## Customization
