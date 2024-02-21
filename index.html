@@ -25,12 +25,21 @@
     <div class="alert alert-warning d-flex align-items-center" role="alert">
       <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:" style="width: 64px; height: 64px;"><use xlink:href="#exclamation-triangle-fill"></use></svg>
       <div class="alert alert-warning alert-dismissible fade show mb-0 pr-3" role="alert">
-        <strong>Warning:</strong> This AI-Afham chatbot may provide inaccurate information.
+        <strong>Warning: </strong>This AI-Afham chatbot may provide inaccurate information.
       </div>
     </div>
-    <div id="chat">You're engaging with an AI chatbot programmed to replicate Afham Irfan's responses. Please try using second-person interaction with AI-Afham chatbot such as "What is your age and skills, AI-Afham?"</div>
-    <input type="text" id="user-input" placeholder="Type your message...">
+    <div id="chat">
+      <strong>👋 Welcome to AI-Afham!</strong><br><br>
+      Go ahead and ask me questions like:<br><br>
+      - "What is your name, age, and skills?"<br>
+      - "Tell me about your work experience."<br>
+      - "What are your key strengths?"<br>
+      - "Share a memorable project you've worked on."
+    </div>
+    <input type="text" id="user-input" placeholder="Type your message here... 💬">
   </div>
+  <!-- Optional JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="importmap">
     {
       "imports": {
@@ -38,8 +47,8 @@
       }
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/dotenv@16.4.5/lib/main.min.js"></script>
+  <!-- Your custom JavaScript -->
   <script type="module" src="chatbot.js"></script>
-  <!-- Optional JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,12 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
-import dotenv from "dotenv";
-
-// Initialize dotenv
-dotenv.config();
 
 const MODEL_NAME = "gemini-pro";
-const API_KEY = process.env.GOOGLE_GENERATIVE_AI_API_KEY || "";
+const API_KEY = "";
 
 if (!API_KEY) throw new Error("Missing GOOGLE_GENERATIVE_AI_API_KEY");
 
@@ -87,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         {text: "input: How old are you?"},
         {text: "output: I am 21 years old."},
         {text: "input: Where do you live?"},
-        {text: "output: I live in Selangor, Malaysia."},
+        {text: "output: I live in Selangor, Malaysia."}
     ];
 
     async function appendMessage(text) {
