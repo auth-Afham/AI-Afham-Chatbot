@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
-import 'dotenv/config';
 
 const MODEL_NAME = "gemini-pro";
 // Retrieve the API key from the environment variable
