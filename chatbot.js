@@ -3,7 +3,7 @@ import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/ge
 
 const MODEL_NAME = "gemini-pro";
 // Retrieve the API key from the environment variable
-const API_KEY = "AIzaSyCK9sxZx3l_JE4dYH_23ZgCtu1osA3ExL4";
+const API_KEY = process.env.GOOGLE_GENERATIVE_AI_API_KEY || "";
 
 if (!API_KEY) throw new Error("Missing GOOGLE_GENERATIVE_AI_API_KEY");
 
