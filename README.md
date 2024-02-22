@@ -26,7 +26,7 @@ AI-Afham chatbot is a simple and customizable chatbot web application powered by
 3. Optionally, customize the chatbot's behavior by modifying the configuration in `chatbot.js`.
 4. Ensure your Generative AI API key is securely set in the `API_KEY` variable.
 
-You can also access the chatbot online [here](https://auth-afham.github.io/AI-Afham-Chatbot/).
+You can also access the chatbot online [here](https://ai-afham.netlify.app/).
 
 ## Customization
 
