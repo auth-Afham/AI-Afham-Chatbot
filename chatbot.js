@@ -4,7 +4,7 @@ import 'dotenv/config';
 
 const MODEL_NAME = "gemini-pro";
 // Retrieve the API key from the environment variable
-const API_KEY = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
+const API_KEY = "AIzaSyCK9sxZx3l_JE4dYH_23ZgCtu1osA3ExL4";
 
 if (!API_KEY) throw new Error("Missing GOOGLE_GENERATIVE_AI_API_KEY");
 
